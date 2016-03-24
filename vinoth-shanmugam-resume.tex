@@ -1,0 +1,138 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Vinoth Kumar Shanmugam}{Februray 07, 1989}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:vin.omega@gmail.com}{vin.omega\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller
+{+}1.6787073805\sbull
+Atlanta\sbull
+Georgia
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Experienced full stack developer who is passionate about building high quality apps with modern web technologies.Strong organizational, management and communication skills, target-oriented, self-motivated, self-starter and a team player while being an effective individual contributor.}
+\\
+
+Graduated from crescent engineering college, India (2006-2010) at age of 21 and started my carier with iGate Global Solutions which is now part of Capgemini.
+
+I started my earlie carier as a Java programer working with Spring, Struts, IBM WebSphere Portlet and JSP. Around early 2014 I found my way into hybrid mobile app development since then I have been working as a full stack developer focusing more on advanced java scripts, objective C, Java, OSGI, micro services and more.
+
+Recently I have been an javascript enthusiast and want to be active part of the open source movement. 
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\textnormal{SmartOutage, GE Power}}
+  {\textsc{Atlanta, Georgia}} {
+  \headedsubsection
+    {Software Engineer}
+    {Feb \apo14 -- present}
+    {\bodytext{}}
+  \headedsubsection
+    {Team Lead}
+    {Apr \apo15 -- present}
+    {\bodytext{}}
+}
+
+\headedsection
+  {\textnormal{My Fleet, GE Power}}
+  {\textsc{Atlanta, Georgia}} {
+  \headedsubsection
+    {Software Engineer}
+    {Oct \apo13 -- Jan \apo13}
+    {\bodytext{}}
+}
+
+\headedsection
+  {\textnormal{M&D Catalog, GE Power}}
+  {\textsc{Chennai, India}} {
+  \headedsubsection
+    {Software Engineer}
+    {May \apo13 -- Sept \apo13}
+    {\bodytext{}}
+}
+
+\headedsection
+  {\textnormal{Digital Catalog, GE Oil&Gas}}
+  {\textsc{Chennai, India}} {
+  \headedsubsection
+    {Software Engineer}
+    {Oct \apo12 -- Apr \apo13}
+    {\bodytext{}}
+}
+
+\headedsection
+  {\textnormal{Custmer Database, TNT}}
+  {\textsc{Chennai, India}} {
+  \headedsubsection
+    {Software Engineer}
+    {Jan \apo10 -- Sept \apo12}
+    {\bodytext{}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Leading and recruiting for team(s) of software workers.  Big fan of Agile methodologies and continuous delivery and functional programming.  Enjoys writing Java/\nsp Java script/\nsp.  Solid knowledge of web technologies. Knowledge to architect and implement a system from scratch.  Strong skills on Project setup. Linux administration skills (e.g.\ Bash scripting, Apache/\acr{NGINX}, Postgres/My/No\acr{SQL}, ElasticSearch).  Well experienced with Docker and DevOps model.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {\href{https://en.wikipedia.org/wiki/Tamil_language}{Tamil} \emph{(mother tongue)}, English \emph{(full professional proficiency)}.}
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Non-exhaustive and in alphabetical order:}
+  {history, music (from classical to metal), \acr{NLP}, open source, philosophy, travel and cooking.}
+
+\end{document}
