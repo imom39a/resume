@@ -1,6 +1,8 @@
+# Forked from https://github.com/cies/resume
+
 # My Latex resume
 
- * Is a [nicely typeset 2-page PDF](https://rawgithub.com/cies/resume/master/cies-breijs-resume.pdf) (click the link to download mine)
+ * Is a [nicely typeset 2-page PDF](https://rawgithub.com/imom39a/resume/master/vinoth_kumar_shanmugam_resume.pdf) (click the link to download mine)
  * Compiles with or without installing software (read more below).
  * Might well be a starting point for your very own Latex resume.
 
