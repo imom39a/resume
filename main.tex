@@ -1,0 +1,111 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Vinoth}{Shanmugam}
+\address{1436 Windy Ridge Ln Se}{Atlanta,}{GA 30339}
+\phone[mobile]{+1~(678)~707~3805}                   
+\email{vin.omega@gmail.com}                         
+
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+
+\cventry{Feb'14 - Now\enspace}{Software Engineer, SmartOutage App}{Capgemini - GE Power}{Atlanta, Georgia}{}{Hybrid mobile first app to aid in field service operations for onsite and offshore engineers. It's built on Predix 14.3 Industrial Internet platform.
+\begin{itemize}%
+    \item Designed and developer customer report generation module. (75\% reduction in cycle time comparing to existing system in place)
+    \item Designed and developed inventory management module with ble device integrations. (60\% cycle time comparing to existing system in place)
+    \item Part of team that migrated the app from jqm to angular stack (Predix ready stack)
+    \item Requirement gathering and converting them into software design
+    \item Maintainer for most of the modules in the app
+    \end{itemize}}
+    
+\cventry{Fall 2013}{Software Engineer, My Fleet}{iGATE - GE Power}{Atlanta, Georgia}{}{GE Industrial Internet customer portal to collect and view key performance indicators (KPI's) like plant information, assets metrics, trend, benchmark, etc that provide various insights. It's built on Spring MVC and later migrated to predix 14.3 tech stack.
+\begin{itemize}
+    \item Requirement gathering and converting them into software design
+    \item Providing solution and transforming math formulas into scripts for deriving the KPI's
+    \item Active member of development team
+\end{itemize}}
+ 
+\cventry{Summer 2013}{Software Engineer, M\&D Catalog}{iGATE - GE Power}{India}{}{To automate M\&D (Manufacturing and diagnosis) cost calculation and generate yearly audit reports. It's built on Spring MCV, PLSQL and Extjs client.
+\begin{itemize}
+    \item Designed and developed the application 
+    \item Was leading a team of 2 junior developers
+\end{itemize}}
+
+\cventry{Oct'13 - Apr'14\enspace}{Software Engineer/ Junior Dev, Digital Catalog}{iGATE - GE Oil\&Gas}{India}{}{An inventory management client for GE Oil\&Gas. App generates inventory reports from the web client. Email based catalogue enquiry for app less support.
+\begin{itemize}
+    \item Designed and developed the email based catalog search and report generation module
+    \item Was active part of 2 member team that developed the web app
+\end{itemize}}
+
+\cventry{Jan'10 - Sep'12\enspace}{Software Engineer/ Junior Dev, TNT Customer item}{iGATE - TNT}{India}{}{Customer item app is to capture the TNT’s worldwide customer details to a centralized item which is base for all other apps. Built on Struts 2 with spring binding, IBM portlets for client.
+\begin{itemize}
+    \item Writing tons of test cases
+    \item Later start working one requirements and defects
+    \item Refactored and rewrote few key search modules for performance tuning
+\end{itemize}}
+
+\break
+
+\section{Software skills}
+\subsection{Client}
+\cvitem{Language}{JavaScript ES6, Objective C}
+\cvitem{Frameworks}{AngularJs, NodeJs, RequireJs, Play, jQuery}
+\cvitem{Styling}{HTML 5, CSS3, SASS, LESS}
+\cvitem{Testing}{Jasmine, Protractor, Karma}
+\cvitem{Build \& Scaffold}{Grunt, Yeoman}
+\subsection{Server}
+\cvitem{Language}{Java 8}
+\cvitem{Spring}{Core, Boot, Cloud, MVC, JPA, Test}
+\cvitem{Other frameworks}{Hibernate, Struts}
+\cvitem{Testing}{JUnit, Mock Frameworks}
+\cvitem{Build \& Scaffold}{Maven, Spring Roo}
+\cvitem{Database}{MySQL, PostgreSQL, Oracle, MongoDB}
+\subsection{Others}
+\cvitem{Server}{Tomcat, Karaf, JBoss, Nginx, Apache}
+\cvitem{VM Tool}{Docker}
+\cvitem{Cloud}{Cloud Foundry - Pivotal, Amazon Web Services, Predix, Cloudbees}
+\cvitem{CI}{Jenkins}
+\cvitem{IDE}{STS, Eclipse, WebStorm, Atom, XCode}
+\cvitem{Agile Dev}{Rally, Atlassian JIRA}
+
+\section{Education}
+\cventry{2006--2010}{Bachelor of Engineering in Information Technology}{Anna University}{Chennai}{{India}}{}
+
+\section{Languages}
+\cvitemwithcomment{English}{Full professional proficiency}{}
+
+\section{Extras}
+\cvitem{}{Conducting several company internal technical knowledge sharing sessions}
+\cvitem{}{Member of company internal Technology Consulting Hub}
+\cvitem{}{Member of company internal account level estimation team that work on RFP's}
+\cvitem{}{Member of developer workforce recruitment team}
+\cvitem{}{Received company internal awards like best performer of month, quarter}
+\cvitem{}{Open Source Enthusiast}
+\clearpage
+
+\end{document}

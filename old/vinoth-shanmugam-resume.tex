@@ -1,0 +1,171 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Vinoth Kumar Shanmugam}{Februray 07, 1989}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:vin.omega@gmail.com}{vin.omega\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller
+{+}1.6787073805\sbull
+Atlanta\sbull
+Georgia
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{Experienced full stack developer who is passionate about building high quality apps with modern web technologies.Strong organizational, management and communication skills, target-oriented, self-motivated, self-starter and a team player while being an effective individual contributor.}
+\\
+
+Graduated from crescent engineering college, India (2006-2010) at age of 21 and started my carier with iGate Global Solutions which is now part of Capgemini.
+
+I started my earlie carier as a Java programer working with Spring, Struts, IBM WebSphere Portlet and JSP. Around early 2014 I found my way into hybrid mobile app development since then I have been working as a full stack developer focusing more on advanced java scripts, objective C, Java, OSGI, micro services and more.
+
+Recently I have been an javascript enthusiast and want to be active part of the open source movement. 
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\textnormal{SmartOutage, GE Power}}
+  {\textsc{Atlanta, Georgia}} {
+  \headedsubsection
+    {Software Engineer, SmartOutage App}
+    {Feb \apo14 -- present}
+    {\bodytext{
+    Hybrid mobile first app to aid in field service operations for onsite and offshore engineers. Its built on Predix 14.3 Industrial Internet platform.
+
+    Designed and developer dynamic report generation module. (75 percent reduction in cycle time comparing to existing system in place)
+    Designed and developed inventory management module with ble device integrations. (60 perecnt cycle time comparing to existing system in place)
+    Part of team that migrated the app from jqm to angular stack (Predix 2.0 ready stack)
+    Played a major role in requirment gatherig and converting them into app functionalites
+    Maintainer for most of the modules in the app
+    }}
+}
+
+\headedsection
+  {\textnormal{My Fleet, GE Power}}
+  {\textsc{Atlanta, Georgia}} {
+  \headedsubsection
+    {Software Engineer, My Fleet App}
+    {Oct \apo13 -- Jan \apo13}
+    {\bodytext{
+    GE Industrial Internet customer portal to see key unit, plant information, assets metrics, trend and benchmark key performance indicators (KPIs) that provide users insights into potential areas to focus for improved asset performance. Build on Spring MVC and later migrated to predix 14.3 tech stack.
+    \sbull Requirment gathering and design document preperation
+    \sbull Providing solution and transforming formulas for deriving KPI's
+    \sbull Contributed to developemnt and testing of the app
+    }}
+}
+
+\headedsection
+  {\textnormal{M&D Catalog, GE Power}}
+  {\textsc{Chennai, India}} {
+  \headedsubsection
+    {Software Engineer}
+    {May \apo13 -- Sept \apo13}
+    {\bodytext{
+    To automate M&D (Manufacturing and diganoiss) cost calculcation and generate yearly audit reports to feed upstream systems. Excel sheet based cost calcuation and audit reports generation completely got automated. Built on Spring MCV, PLSQL and Extjs client
+    \sbull Designed and developed the application 
+    \sbull Was leading a team of 2 junior devlopers
+    }}
+}
+
+\headedsection
+  {\textnormal{Digital Catalog, GE Oil&Gas}}
+  {\textsc{Chennai, India}} {
+  \headedsubsection
+    {Software Engineer/ Junior Dev}
+    {Oct \apo12 -- Apr \apo13}
+    {\bodytext{
+    An inventory management client for GE Oil & Gas. App generates invetory reports from the web client. Email based catalogue enqiure for app less support.
+    \sbull Was part of 2 member team that developed the web app
+    \sbull Designed and eveloped the email based catalog search and report generation module    
+    }}
+}
+
+\headedsection
+  {\textnormal{Custmer Database, TNT}}
+  {\textsc{Chennai, India}} {
+  \headedsubsection
+    {Software Engineer/ Junior Dev}
+    {Jan \apo10 -- Sept \apo12}
+    {\bodytext{
+    Customer Database app is to capture the TNT’s worldwide customer details to a centralized detabase which is base for all other apps. Built on Struts 2 with spring binding, IBM portlets for client.
+
+    \sbull Writing tons of test cases
+    \sbull Later start working one requirments and defects
+    \sbull Refractored and rewrote some key search modules for performance tuning
+    }}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  { \sbull Java (****), JavaScript (***), Python (**) 
+    \sbull CSS, CSS3 (***), HTML, HTML 5 (***), SASS (***), LESS (***)
+    \sbull AngularJs, Node.js (***), Require.js (***), jQuery (****)
+    \sbull Git, CSV, SVN
+    \sbull Rally, Atlassian JIRA
+    \sbull Mac OS X, Winddows, Ubuntu, Linux, zsh
+    \sbull Cloud Foundry, Amazon Web Services, cloudbeed
+    \sbull Eclipse,  WebStorm,  Atom, Apple XCode
+    \sbull Tomcat, JBoss, Nginx
+    \sbull MySQL, PostgreSQL, Oracle, MongoDB
+    \sbull Dockerg
+    \sbull Maven, Sprin Roo, Yomen, 
+
+    
+  }
+  {Extras:}{ 
+  \sbull Conducting several company internal technical knowledge sharing sessions   
+  \sbull Member of company internal Technology Consulting Hub  
+  \sbull Providing time estimation for RFP's 
+  \sbull Leading and recruiting developer workforce} 
+  \sbull Received company internal award's like best performer of month, quarter on couple of occasions
+  \sbull Opensource Enthuistat
+
+
+
+\end{document}
